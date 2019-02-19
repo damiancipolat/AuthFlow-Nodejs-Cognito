@@ -1,6 +1,7 @@
 /*
 	Notes:
 	- When you create the app, disable create client secret.
+	- https://medium.com/@prasadjay/amazon-cognito-user-pools-in-nodejs-as-fast-as-possible-22d586c5c8ec
 */
 
 //Include api modules.
