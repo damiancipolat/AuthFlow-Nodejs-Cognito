@@ -1,0 +1,132 @@
+{
+	"id": "31e96e87-26bf-b2fe-3708-b80728467631",
+	"name": "Auth flow",
+	"description": "",
+	"order": [
+		"6d9c27e1-5dd7-7dad-cf36-cd6948c201d4",
+		"b674925e-5de8-fa28-5461-28589586b043",
+		"36f3a158-7cd3-5cd8-50d4-3856acee3114",
+		"c1be7768-4277-17c1-c200-50ae114283b1"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1550539081414,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "36f3a158-7cd3-5cd8-50d4-3856acee3114",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8080/auth/renew",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "31e96e87-26bf-b2fe-3708-b80728467631",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Renew token",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1550546301688,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\"email\":\"fran3@getnada.com\",\"token\":\"eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.S1e1ZNVPcysWcG8Bjo4TvKQGxc71aX8xikmyOYw2hLKQTgCtTPS6FTnOTqWrs64yI5TDhJ8qXosrOP3X2Sa3BGI2GLXEt3mcdQHl0b6Wm8C_RaZfoeBm4OZ8FyyO2gPzs84h8FU2aKfgM3JW4knaoTT8QM3pMsBx-7klCh54PQP1n0j2fDQ5nwC1QDZmXIoR62hZooI7AdYFdG4R163jYk7LsIuzOaAdNPtMbd2ccYAk8DVLE5B9mDQbEwAsBgHfeu4n-ppx9jsGdqLXfy-TCSTTG8PDl-WR2uwx48kU0nE65nTitpuzEayyRgtbaeYbkFWzZZ1QXf11D4Otg0_sgQ.v4X0BYJFj4wNJ4qp.1AjZvoM_kja_g9sbcWp7PrP0UefA5e3QTEzTgejwuVe7kBnVSNnr4dhgkSOoaGxznRqGZQcl4kKE6aybZQgRRt6OxlF0d8S5CUeAxsP-l4ZAmem_j7wwKX593cHVf7UcbXE7T-bWNXS296oUu2t4pzopYtcAkvfC0uF2AyW9CZy1_pAHUbY3Z22IMZmgobiC6prchVLpZQr_6Vy6SHrPzUlAuHBL7tKNxtam4dB1GclsIQECNloCCHiVfO91wP2bgientaBVb1a2_I7nKfDYVuB_0_jIKQMibBog1co8HSY22x9ODDgaUIs4Yl4Q1F52VKZMowemnV_PHm_AQF5V_cM75LHhABI3WkY0ssO1l4bsZse1FeyCMC4sErQayySPqMPVOoz1WrxcwtaKI2h20zKDnbBR55teO5000kdWdC7t-kGY_1YRO5ZF7yoHunnTeFYHuGN4Dv7lMh7ocQsH4lDLt4w-tWuUXJjPkjkVx48fd2Ccupw7LcSjJJJuI7UF1Tx2eddALSMw6_PuPPNaZ0-uFjAtZ2Cqikbvc-dCLiBsZtx2MGAI4F6Q1Gcq6X--LU4AHdwCrymf4QdxmOHf5eswUklF1k8nlN2YlqGpzU9R17QbyMG40-5Fty9oTPM5aOGl92jb9WPytj_DYr2W5tn0XF2C434MFArX1NUJmyQFv12stE1IaEhZHU8SWUNz-PioTPtTrzBWQuTnIADkfTZjL3sW3CQxDARat7Uhct_-gyVjUk4SqmjpQiHeVicq-5P7AW0ChPZXlPFwx8Zhquut4z8qA5QkDXSKxWtcfVj5w5WvK854GU4BqXXDHPap1srcFV8_QMgvsuRsIY4i0Y4S9iJScm-8eQEiR_VRwDhUrJvFa0SZwMA3Mez-4XvZqkUrxzOxl0mk3URLNFCziwDDbiiDflMZoxr8A2tldUH44tUN9ratLnCt4TVupqC60QZm_HI6JUXdNGsr3yQdniiEMEhhTKwnb2Wr-hfFdXFvWKiuzg_zf0ej2JCnG96xTgYryhtrWYXlTQdDZXaOdFEPazeF_eF5x2qo-KYpznIbviN7eyoEiCMZaki_9e1YJ2najsDWsqS7PNisfFFBYXlshPIJpXyGw4lUZDFfixZi5ZajupYi8BnRL-NUiDKxOP30AG4z9Q094r9LikTdfqNDu9K-w66yAWnZxwAYsBb7pr-KG3j4k3zJ9EIBp6RdJTedcbJPwevRp2i1wd6pwLrrV2Dt-FVSlMb94VRTn8Q7zhBNkm_ok6vc-qkJYLk0LOi7-I37fjBTJA-934dWigUE7g.eaUqb7uxc40Eg5mVHOJW5g\"}"
+		},
+		{
+			"id": "6d9c27e1-5dd7-7dad-cf36-cd6948c201d4",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8080/auth/signup",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "31e96e87-26bf-b2fe-3708-b80728467631",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Sign up",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1550539950502,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\"user\":\"fran\",\"email\":\"fran@getnada.com\",\"password\":\"4297Dc3573!\"}"
+		},
+		{
+			"id": "b674925e-5de8-fa28-5461-28589586b043",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8080/auth/login",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1550546308473,
+			"name": "Login",
+			"description": "",
+			"collectionId": "31e96e87-26bf-b2fe-3708-b80728467631",
+			"responses": [],
+			"rawModeData": "{\"email\":\"fran3@getnada.com\",\"password\":\"4297Dc3573!\"}"
+		},
+		{
+			"id": "c1be7768-4277-17c1-c200-50ae114283b1",
+			"headers": "",
+			"headerData": [],
+			"url": "http://127.0.0.1:8080/auth/verify/eyJraWQiOiJkZXR6WUE2MlwvSjRlRnhCUEsrVjdUcHBqYXg4Z3RUZXFoaTVLRHFuU21NOD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIwMjc2YTVjZi03ZDc4LTQyMTktYjFlYy0xYjlhOGFjZjAwN2YiLCJldmVudF9pZCI6IjhiMDFmM2JlLTMzZWMtMTFlOS05MTkwLTczYTE1ZTJjM2IyYyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE1NTA1NDI2NjQsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC51cy13ZXN0LTIuYW1hem9uYXdzLmNvbVwvdXMtd2VzdC0yX1lJZkp1U0RpdSIsImV4cCI6MTU1MDU0NjI2NCwiaWF0IjoxNTUwNTQyNjY1LCJqdGkiOiI3OWY4MWY0OS00MmI2LTRhYzctOTYzNi04MjUwOWNmMDNiOTEiLCJjbGllbnRfaWQiOiIzODNkbzVkZDY1ZWY1N2tzYTMzMTdxazV1bSIsInVzZXJuYW1lIjoiZnJhbjNAZ2V0bmFkYS5jb20ifQ.SHje5UDVfOHI0Cv5pv2VoKKcyo4fjXVEl0UTRqD9cZstUMqN641rB3CSJy3CmVrYGFV2Se2yHE-08uHsLyD0iG9FrjeMAaxxPd4QiSip0siol7hSp4JVE73SiIP_0l45FadkRcGHpCGVu4FMcEwOFVpHEFueD1jyJLiwxVElqy0sPu6E1E8VZWkLsIv9g8siwNbj3oqhGeuVY3_9l1kStFbbGb9GMCcLan-wLvErkCBA06PetvNsy9l-Tq2gh6FlNnFW97HUKlBkTOfUX5gIfHSrpi1LdhV0Udey9XZhqOjP8UKedt6z2gCSuYgv-FD0Sdv6ULAUTm54e-F4Up9LvA",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "31e96e87-26bf-b2fe-3708-b80728467631",
+			"data": null,
+			"dataMode": "params",
+			"name": "Verify token",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1550546305224,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
