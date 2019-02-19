@@ -1,6 +1,5 @@
 # Auth flow using cognito
 
-### COGNITO:
 - Amazon Cognito lets you add user sign-up, sign-in, and access control to your web and mobile apps quickly and easily.
 - How to use?: we can use cognito throw the aws-sdk.
 
