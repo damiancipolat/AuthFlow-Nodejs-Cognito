@@ -3,6 +3,8 @@
 - Amazon Cognito lets you add user sign-up, sign-in, and access control to your web and mobile apps quickly and easily.
 - How to use?: we can use cognito throw the aws-sdk.
 - I used this link: https://medium.com/@prasadjay/amazon-cognito-user-pools-in-nodejs-as-fast-as-possible-22d586c5c8ec as reference.
+- I recommend this fake email generator website: https://getnada.com/msg
+
 
 ## Server & serverless
 We can use cognito in a full serverless architecture (using lambda functions) or using a server in this example, we will work with an api rest server created with NODEJS.
