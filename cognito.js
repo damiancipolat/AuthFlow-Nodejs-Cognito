@@ -5,15 +5,13 @@ const request   = require('request');
 const jwkToPem  = require('jwk-to-pem');
 const jwt       = require('jsonwebtoken');
 
-AWS.config.loadFromPath('./config.json');
-
 //Set fetch, because aws cognito lib was created for browsers.
 global.fetch = require('node-fetch');
 
 //Set user pool credentials.
-const poolData = {    
-  UserPoolId : "us-west-2_YIfJuSDiu",
-  ClientId : "383do5dd65ef57ksa3317qk5um"
+const poolData = {
+  UserPoolId : "us-east-1_OJcW1odYa",
+  ClientId : "1n2rvcfj25s0sfhimk7vtiue22"
 };
 
 const aws_region = 'us-west-2';
@@ -21,6 +19,30 @@ const aws_region = 'us-west-2';
 //Get user pool.
 const CognitoUserPool = AmazonCognitoId.CognitoUserPool;
 const userPool = new AmazonCognitoId.CognitoUserPool(poolData);
+
+//Very the registration code.
+const verifyCode = (username, code)=>{
+
+  return new Promise((resolve,reject)=>{
+
+    const userPool = new AmazonCognitoId.CognitoUserPool(poolData);  
+    const userData = {
+        Username: username,
+        Pool: userPool
+    };
+     
+    const cognitoUser = new AmazonCognitoId.CognitoUser(userData);
+    cognitoUser.confirmRegistration(code, true, (error, result)=>{
+        if (error){
+          reject(error);
+        } else{
+          resolve(result);
+        }
+    });
+
+  });
+
+}
 
 //Register a new user, and return the data in a promise.
 const signUp = (name,email,password)=>{
@@ -252,6 +274,7 @@ const change = (username, password, newpassword)=>{
 
 }
 
+module.exports.verifyCode = verifyCode;
 module.exports.signUp = signUp;
 module.exports.logIn  = login;
 module.exports.verify = verify;

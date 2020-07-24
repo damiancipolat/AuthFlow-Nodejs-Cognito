@@ -4,13 +4,45 @@ const router  = express.Router();
 //Load cognito wrapper.
 const cognito = require('./cognito.js');
 
+//Verificate code
+router.post('/code', async (req,res)=>{
+
+  const {
+    body
+  } = req;
+
+  //Validate request format.
+  if (body.user&&body.code){
+
+    const {
+      user,
+      code
+    } = body;
+
+    try{
+
+      //Send to cognito the signup request.
+      let result = await cognito.verifyCode(user,code);
+      res.status(200).json({"result":result});
+
+    } catch(error){
+      console.log(error);
+      res.status(400).json({"error":error});
+    }
+
+  } else {
+    res.status(400).json({"error":"bad format"});
+  }
+
+});
+
 //Receive user signup.
 router.post('/signup', async (req,res)=>{
 
   const {body} = req;
 
   //Validate request format.
-  if (body.email&&body.user&&body.password){
+  //if (body.email&&body.user&&body.password){
 
     let {email,user,password} = body;
 
@@ -31,10 +63,10 @@ router.post('/signup', async (req,res)=>{
     } catch(err){
       res.status(400).json({"error":err});
     }
-
+/*
   } else {
     res.status(400).json({"error":"bad format"});
-  }
+  }*/
 
 });
 
