@@ -135,7 +135,7 @@ router.post('/renew', async (req,res)=>{
     try{
 
       //Send to cognito the renew token request.
-      let result = await cognito.reNew(email,token);
+      let result = await cognito.reNew(token,email);
 
       res.status(200).json({"result":result});
 
